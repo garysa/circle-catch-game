@@ -34,9 +34,35 @@ cd game
 pip install -r requirements.txt
 ```
 
+## Quick Start
+
+The easiest way to run the game is using the provided bash script:
+
+```bash
+./start_game.sh
+```
+
+This script will automatically check for dependencies, install any missing packages, and launch the game.
+
 ## Usage
 
-Run the game with:
+### Using the Launcher Script (Recommended)
+
+Run the game with the bash script:
+```bash
+./start_game.sh           # Start with sound
+./start_game.sh -nosound  # Start without sound
+```
+
+The script will:
+- Check if Python 3 is installed
+- Verify all dependencies (pygame, numpy)
+- Automatically install missing dependencies
+- Launch the game
+
+### Manual Launch
+
+You can also run the game directly with Python:
 ```bash
 python circle_game.py
 ```
